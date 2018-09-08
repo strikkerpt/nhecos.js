@@ -1,5 +1,5 @@
 {
-  "name": "nhecosjs",
+  "name": "nhecos.js",
   "version": "1.0.0",
   "description": "Generate a nhecos to any image.",
   "main": "index.js",
