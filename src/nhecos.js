@@ -80,3 +80,5 @@ class Nhecos {
   }
 
 }
+
+export default Nhecos;
