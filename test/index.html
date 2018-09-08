@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./../dist/nhecos.js"></script>
+    <script>
+        window.onload = start;
+
+        function start() {
+          var nhecos = new Nhecos('http://www.portugaldenorteasul.pt/uploads/20180307200250_porto_o_que_fazer.jpg');
+          nhecos.then(function(base64) {
+            document.getElementsByClassName('img')[0].setAttribute('src', base64);
+            document.getElementsByClassName('textarea')[0].value = base64;
+          });
+
+
+          var canvas = document.createElement('canvas');
+
+        }
+    </script>
+    <style>
+        .content {
+            position: relative;
+            width: 600px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        img {
+            position: relative;
+            width: 100%;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <img class="img" alt="Loading..."/>
+    <textarea class="textarea"></textarea>
+</div>
+</body>
+</html>
